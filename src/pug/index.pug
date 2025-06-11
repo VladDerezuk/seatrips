@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="icon", href="img/sea.png", type="image/png")  
+        title Морські Пригоди приїзжайте радуйтесь і все таке
+    body
+        include components/mixin
+        header
+            nav.navbar.navbar-light.navbar-expand-lg.bg-body-tertiary.colr
+                .container-fluid.flex-between
+                    a.navbar-brand(href='#') 
+                        img(src="img/sea.png", alt="")
+                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbarNavAltMarkup.collapse.navbar-collapse
+                        .navbar-nav.ashk
+                            a.nav-link.cv(href='#') головна
+                            a.nav-link.cv(href='#') послуги
+                            a.nav-link.cv(href='#') про компанію
+                            a.nav-link.cv(href='#') акції
+                            a.nav-link.cv(href='#') партнери
+                            a.nav-link.cv(href='#') відгуки
+                            a.nav-link.cv(href='#') контакти
+            div.textes
+                h1 Морські пригоди
+                h2 Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+                a.detalno(href="") детальніше
+            div.viberiplan
+                p.ober обери свій план подорожі
+                p.nash Наша фірма -лідер на ринку у своїй сфері
+                a(href="")
+                    img(src="img/strilka.png", alt="")
+        script(src="js/script.js")

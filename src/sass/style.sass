@@ -1,0 +1,135 @@
+@import components/mixin
+
+*
+  margin: 0
+  padding: 0
+    
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  font-family: "Rubik"
+  background-color: #f4f7f9
+
+header
+  background: url(../img/verxbgc.jpg) no-repeat center/cover
+  height: 110vh
+  display: flex
+  flex-direction: column
+
+.flex-between
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.navbar-brand img
+  max-height: 50px
+
+h1
+  font-size: 72px
+  letter-spacing: 1px
+  text-transform: uppercase
+  color: #fff
+  font-weight: 400
+  text-align: center
+
+h2
+  max-width: 528px
+  max-height: 62px
+  font-size: 16px
+  line-height: 24px
+  color: #ffffff
+  font-weight: 400
+  font-style: italic
+  padding-bottom: 100px
+
+
+.items-center
+  align-items: center
+  text-align: center
+
+.colr
+  background-color: transparent !important
+  padding-bottom: 160px
+
+.cv
+  color: #fff
+
+.detalno
+  padding: 10px 20px
+  border-radius: 22px
+  filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
+  background-color: #ffb700
+
+a.detalno
+  text-decoration: none
+  font-size: 16px
+  letter-spacing: 1px
+  text-transform: uppercase
+  color: #fdfcfb
+  font-weight: 400
+  text-align: center
+  transition: all 1s ease
+
+.detalno:hover
+  background-color: #47a9ef
+
+a.detalno:hover
+  color: #072665
+
+.textes
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.container-fluid.flex-between
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  +media(1024)
+    padding: 20px 300px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+
+.navbar-collapse
+  justify-content: flex-end
+  flex-grow: 1
+
+.navbar-nav
+  display: flex
+  gap: 16px
+  align-items: center
+
+.viberiplan
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 390px
+
+.ober
+  max-width: 330px
+  font-size: 36px
+  letter-spacing: 1px
+  line-height: 44px
+  text-transform: uppercase
+  color: #333333
+  font-weight: 400
+  text-align: center
+
+.nash
+  font-size: 16px
+  line-height: 24px
+  color: #333333
+  font-weight: 400
+  font-style: italic
+  text-align: center
+  padding-bottom: 20px
