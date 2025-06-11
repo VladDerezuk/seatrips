@@ -27,6 +27,7 @@ header
   max-height: 50px
 
 h1
+  position: relative
   font-size: 50px
   letter-spacing: 1px
   text-transform: uppercase
@@ -38,15 +39,12 @@ h1
 
 h2
   max-width: 528px
-  max-height: 62px
   font-size: 16px
   line-height: 24px
   color: #ffffff
   font-weight: 400
   font-style: italic
-  padding-bottom: 150px
-  +media(500)
-    padding-bottom: 100px
+  padding-bottom: 10px
 
 .items-center
   align-items: center
@@ -61,11 +59,13 @@ h2
 .cv
   color: #fff
 
+.textes
+  padding-bottom: 150px
+  +media(1920)
+    padding-bottom: 360px
+
 .detalno
-  padding: 10px 20px
-  border-radius: 22px
-  filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
-  background-color: #ffb700
+  border-radius: 20px
 
 a.detalno
   text-decoration: none
@@ -77,13 +77,7 @@ a.detalno
   text-align: center
   transition: all 1s ease
 
-.detalno:hover
-  background-color: #47a9ef
-
-a.detalno:hover
-  color: #072665
-
-.textes
+.container
   display: flex
   flex-direction: column
   align-items: center
@@ -101,8 +95,7 @@ a.detalno:hover
     justify-content: space-between
     align-items: center
     width: 100%
-
-
+  
 .navbar-collapse
   justify-content: flex-end
   flex-grow: 1
@@ -111,16 +104,6 @@ a.detalno:hover
   display: flex
   gap: 16px
   align-items: center
-
-.viberiplan
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  text-align: center
-  padding: 200px 0
-  +media(1660)
-    padding: 390px 0
 
 .ober
   max-width: 330px
@@ -140,3 +123,29 @@ a.detalno:hover
   font-style: italic
   text-align: center
   padding-bottom: 20px
+
+h1:before
+  content: ""
+  position: absolute
+  top: -60px
+  left: 20%
+  width: 60%
+  height: 60px
+  opacity: 0.300
+  border-left: 4px solid rgba(252, 252, 252, 252)
+  border-top: 4px solid rgba(252, 252, 252, 252)
+  border-right: 4px solid rgba(252, 252, 252, 252)
+  z-index: 1
+
+h1:after
+  content: ""
+  position: absolute
+  top: 200px
+  left: 20%
+  width: 60%
+  height: 100px
+  opacity: 0.300
+  border-left: 4px solid rgba(252, 252, 252, 252)
+  border-right: 4px solid rgba(252, 252, 252, 252)
+  border-bottom: 4px solid rgba(252, 252, 252, 252)
+  z-index: 1
