@@ -27,12 +27,14 @@ header
   max-height: 50px
 
 h1
-  font-size: 72px
+  font-size: 50px
   letter-spacing: 1px
   text-transform: uppercase
   color: #fff
   font-weight: 400
   text-align: center
+  +media(425)
+    font-size: 72px
 
 h2
   max-width: 528px
@@ -42,8 +44,9 @@ h2
   color: #ffffff
   font-weight: 400
   font-style: italic
-  padding-bottom: 100px
-
+  padding-bottom: 150px
+  +media(500)
+    padding-bottom: 100px
 
 .items-center
   align-items: center
@@ -51,7 +54,9 @@ h2
 
 .colr
   background-color: transparent !important
-  padding-bottom: 160px
+  padding-bottom: 90px
+  +media(500)
+    padding-bottom: 160px
 
 .cv
   color: #fff
@@ -90,7 +95,7 @@ a.detalno:hover
   justify-content: space-between
   align-items: center
   width: 100%
-  +media(1024)
+  +media(1440)
     padding: 20px 300px
     display: flex
     justify-content: space-between
@@ -113,7 +118,9 @@ a.detalno:hover
   align-items: center
   justify-content: center
   text-align: center
-  padding: 390px
+  padding: 200px 0
+  +media(1660)
+    padding: 390px 0
 
 .ober
   max-width: 330px
