@@ -27,18 +27,39 @@ html(lang="en")
                             a.nav-link.cv(href='#') партнери
                             a.nav-link.cv(href='#') відгуки
                             a.nav-link.cv(href='#') контакти
-            div.textes.container
+            div.textes.top-container
                 h1 Морські пригоди
                 h2 Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
                 a.detalno.btn.btn-warning(href="") детальніше
-            div.viberiplan.container
+            div.viberiplan.top-container
                 p.ober обери свій план подорожі
                 p.nash Наша фірма -лідер на ринку у своїй сфері
                 a.strilka(href="")
                     img(src="img/strilka.png", alt="")
-            div.pronash.container
+        div.pronash.container.flex-between
+            .block
                 p.pro про нашу компанію
                 p.nasha Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
                 a.detalno.btn.btn-warning(href="") детальніше
                 p.tixo * - зверніть увагу, зміна ціни може залежати від курсу долара.
+            .card.body-card
+                img.card-img-top(src="img/bike.svg", alt="велик")
+                .card-body
+                    h5.card-title.body-card-nazv Тур на велосипедах
+                    p.card-price 335 грн*
+                    p.card-text.body-card-texte Подорожуючи на велосипеді, ви поринете в атмосферу мальовничих гір, чарівних краєвидів та шалених пригод.
+            .card.body-card
+                img.card-img-top(src="img/circle.svg", alt="круг")
+                .card-body
+                    h5.card-title.body-card-nazv Екскурсія на острів
+                    p.card-price 500 грн*
+                    p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.
+            .card.body-card
+                img.card-img-top(src="img/message.svg", alt="мессаге")
+                .card-body
+                    h5.card-title.body-card-nazv Особливе замовлення
+                    p.card-price 250 грн.*
+                    p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.
+        div.nov.container
+            a.plani(href="") дивитись усі плани
         script(src="js/script.js")
