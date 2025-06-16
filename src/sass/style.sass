@@ -14,7 +14,6 @@ body
 
 header
   background: url(../img/verxbgc.jpg) no-repeat center/cover
-  height: 110vh
   display: flex
   flex-direction: column
 
@@ -52,6 +51,7 @@ h2
   text-align: center
 
 .colr
+  padding-top: 50px 
   background-color: transparent !important
   padding-bottom: 90px
   +media(500)
@@ -88,18 +88,6 @@ a.detalno
   display: flex
   flex-direction: column
   align-items: center
-
-.container-fluid.flex-between
-  display: flex
-  justify-content: space-between
-  align-items: center
-  width: 100%
-  +media(1440)
-    padding: 20px 300px
-    display: flex
-    justify-content: space-between
-    align-items: center
-    width: 100%
   
 .navbar-collapse
   justify-content: flex-end
@@ -182,7 +170,6 @@ a.detalno
   font-weight: 400
 
 .body-card
-  width: 18rem
   border-radius: 0px
   border: none
   background-color: #f4f7f9
@@ -230,3 +217,45 @@ a.detalno
   transition: all 1s ease
   &:hover
     color: #ffb700
+  
+.circle
+  width: 10px
+  height: 10px
+  fill: #0099ff
+  align-items: center
+  &:hover
+    fill: #ffb700
+
+hr
+  border: none
+  border-top: 1px solid #000
+  padding-bottom: 75px
+
+.fig
+  padding-top: 73px
+
+.divoc
+  font-size: 36px
+  line-height: 42px
+  text-transform: uppercase
+  color: #333
+  font-weight: 400
+
+.pxyke
+  font-size: 16px
+  line-height: 24px
+  color: #333
+  font-weight: 400
+  font-style: italic
+
+.detalnishe
+  padding: 10px 40px
+  border-radius: 23px
+  background-color: rgba(0,153,255,0)
+  border: 2px solid #0099ff
+
+.knopkashka
+  padding: 10px 40px
+  border-radius: 23px
+  filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
+  background-color: #ffb700

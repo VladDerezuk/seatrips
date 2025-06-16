@@ -13,7 +13,7 @@ html(lang="en")
         include components/mixin
         header
             nav.navbar.navbar-dark.bg-dark.navbar-expand-lg.bg-body-tertiary.colr
-                .container-fluid.flex-between
+                .container.flex-between
                     a.navbar-brand(href='#') 
                         img(src="img/sea.png", alt="")
                     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
@@ -36,30 +36,51 @@ html(lang="en")
                 p.nash Наша фірма -лідер на ринку у своїй сфері
                 a.strilka(href="")
                     img(src="img/strilka.png", alt="")
-        div.pronash.container.flex-between
-            .block
+    div.pronash.container
+        .row
+            .block.col-3
                 p.pro про нашу компанію
                 p.nasha Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
                 a.detalno.btn.btn-warning(href="") детальніше
                 p.tixo * - зверніть увагу, зміна ціни може залежати від курсу долара.
-            .card.body-card
-                img.card-img-top(src="img/bike.svg", alt="велик")
-                .card-body
-                    h5.card-title.body-card-nazv Тур на велосипедах
-                    p.card-price 335 грн*
-                    p.card-text.body-card-texte Подорожуючи на велосипеді, ви поринете в атмосферу мальовничих гір, чарівних краєвидів та шалених пригод.
-            .card.body-card
-                img.card-img-top(src="img/circle.svg", alt="круг")
-                .card-body
-                    h5.card-title.body-card-nazv Екскурсія на острів
-                    p.card-price 500 грн*
-                    p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.
-            .card.body-card
-                img.card-img-top(src="img/message.svg", alt="мессаге")
-                .card-body
-                    h5.card-title.body-card-nazv Особливе замовлення
-                    p.card-price 250 грн.*
-                    p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.
-        div.nov.container
-            a.plani(href="") дивитись усі плани
+            .ogor.col-9
+                .kartku.row
+                    .card.body-card.col
+                        img.card-img-top(src="img/bike.svg", alt="велик")(href="#vniz")
+                        .card-body
+                            h5.card-title.body-card-nazv Тур на велосипедах
+                            p.card-price 335 грн*
+                            p.card-text.body-card-texte Подорожуючи на велосипеді, ви поринете в атмосферу мальовничих гір, чарівних краєвидів та шалених пригод.
+                    .card.body-card.col
+                        img.card-img-top(src="img/circle.svg", alt="круг")
+                        .card-body
+                            h5.card-title.body-card-nazv Екскурсія на острів
+                            p.card-price 500 грн*
+                            p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.
+                    .card.body-card.col
+                        img.card-img-top(src="img/message.svg", alt="мессаге")
+                        .card-body
+                            h5.card-title.body-card-nazv Особливе замовлення
+                            p.card-price 250 грн.*
+                            p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.
+                .row
+                    a.plani(href="") дивитись усі плани<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+        hr.container
+.divovishni.container
+  .row.align-items-center
+    .col-5
+      img.img-fluid(src="img/fig.png", alt="Острів")
+    .col-7
+      h2.divoc Дивовижний безлюдний острів, який зводить людей з розуму
+      p.pxyke Пхукет – курортно-туристична Мекка Таїланду. Білосніжний пісок, бірюзове море, мальовничі скелі, а трохи вище – буйна тропічна рослинність. Все це можна побачити на власні очі.
+      .row
+        .col
+          a.btn.btn-warning.knopkashka(href="#") Замовити тур
+        .col
+          a.btn.btn-outline-primary.detalnishe(href="#") Детальніше
+        .col
+            .card-body.nizka
+                p.card-price 575 грн./день
+                p.card-text.body-card-texte В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+
         script(src="js/script.js")
