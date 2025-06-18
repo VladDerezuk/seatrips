@@ -5,6 +5,9 @@ html(lang="en")
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         link(rel="stylesheet", href="css/style.css")
         link(rel="icon", href="img/favi.png", type="image/png")  
@@ -27,60 +30,80 @@ html(lang="en")
                             a.nav-link.cv(href='#') партнери
                             a.nav-link.cv(href='#') відгуки
                             a.nav-link.cv(href='#') контакти
-            div.textes.top-container
+            .textes.top-container
                 h1 Морські пригоди
                 p.vertix Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
                 a.detalno.btn.btn-warning(href="") детальніше
-            div.viberiplan.top-container
+            .viberiplan.top-container
                 p.ober обери свій план подорожі
                 p.nash Наша фірма -лідер на ринку у своїй сфері
-                a.strilka(href="")
+                a.strilka(href="#tyr")
                     img(src="img/strilka.png", alt="")
-    div.pronash.container
-        .row.md-3
-            .block.col-3
-                p.pro про нашу компанію
-                p.nasha Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
-                a.detalno.btn.btn-warning(href="") детальніше
-                p.tixo * - зверніть увагу, зміна ціни може залежати від курсу долара.
-            .ogor.col-9.md-9
-                .kartku.row
-                    .card.body-card.col
-                        img.card-img-top(src="img/bike.svg", alt="велик")(href="#vniz")
-                        .card-body
-                            h3.card-title.body-card-nazv Тур на велосипедах
-                            p.card-price 335 грн*
-                            p.card-text.body-card-texte Подорожуючи на велосипеді, ви поринете в атмосферу мальовничих гір, чарівних краєвидів та шалених пригод.
-                    .card.body-card.col
-                        img.card-img-top(src="img/circle.svg", alt="круг")
-                        .card-body
-                            h3.card-title.body-card-nazv Екскурсія на острів
-                            p.card-price 500 грн*
-                            p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.
-                    .card.body-card.col
-                        img.card-img-top(src="img/message.svg", alt="мессаге")
-                        .card-body
-                            h3.card-title.body-card-nazv Особливе замовлення
-                            p.card-price 250 грн.*
-                            p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.
+    .div.pronash.container
+        .row
+            .col-12.col-md-4
+                .block
+                    p.pro про нашу компанію
+                    p.nasha Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                    a.detalno.btn.btn-warning(href="") детальніше
+                    p.tixo * - зверніть увагу, зміна ціни може залежати від курсу долара.
+            .col-12.col-md-8
                 .row
-                    a.plani(href="") дивитись усі плани<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                    .col-12.col-sm-6.col-lg-4
+                        .card.body-card
+                            img.card-img-top(src="img/bike.svg", alt="велик")
+                            .card-body
+                                h3.card-title.body-card-nazv Тур на велосипедах
+                                p.card-price 335 грн*
+                                p.card-text.body-card-texte Подорожуючи на велосипеді, ви поринете в атмосферу мальовничих гір...
+                    .col-12.col-sm-6.col-lg-4
+                        .card.body-card
+                            img.card-img-top(src="img/dashed.svg", alt="круг")
+                            .card-body
+                                h3.card-title.body-card-nazv Екскурсія на острів
+                                p.card-price 500 грн*
+                                p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди...
+                    .col-12.col-sm-6.col-lg-4
+                        .card.body-card
+                            img.card-img-top(src="img/people.svg", alt="мессаге")
+                            .card-body
+                                h3.card-title.body-card-nazv Особливе замовлення
+                                p.card-price 250 грн.*
+                                p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутньою...
+                .row
+                    .col-12.text-center
+                        a.plani(href="") дивитись усі плани
+                            svg.circle(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512")
+                                path(d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z")
+        tyr#tyr
         hr.container
-.divovishni.container
-  .row
-    .col-4
-      img.imge.image-fluid(src="img/fig.png", alt="Острів")
-    .col-8
-      h2.divoc Дивовижний безлюдний острів, який зводить людей з розуму
-      .row
-        .col-8
-            p.pxyke Пхукет – курортно-туристична Мекка Таїланду. Білосніжний пісок, бірюзове море, мальовничі скелі, а трохи вище – буйна тропічна рослинність. Все це можна побачити на власні очі.
-            .d-flex
-                a.knopkashka.btn.btn-warning(href="") Замовити тур
-                a.detalnishe.btn.btn-outline-primary(href="") Детальніше
-        .col
-            .nizka
-                p.card-price 575 грн./день
-                p.textik В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+    .divovishni.container
+        .row
+            .col-12.col-lg-4
+                img.imge.img-fluid(src="img/fig.png", alt="Острів")
 
+            .col-12.col-lg-8
+                h2.divoc Дивовижний безлюдний острів, який зводить людей з розуму
+                .row
+                    .col-12.col-md-8
+                        p.pxyke Пхукет – курортно-туристична Мекка Таїланду. Білосніжний пісок, бірюзове море, мальовничі скелі, тропічна рослинність...
+                        .d-flex.flex-wrap.gap-2
+                            a.knopkashka.btn.btn-warning(href="") Замовити тур
+                            a.detalnishe.btn.btn-outline-primary(href="") Детальніше
+                    .col-12.col-md-4
+                        .nizka
+                            p.card-price 575 грн./день
+                            p.textik В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+    main
+        .container 
+            h2.pimai cпіймай хвилю 
+            span живи яскраво!
+            p.polu Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+            a.detalno.btn.btn-warning(href="") детальніше
+        .drugi.container
+            img(src="img/lapki.svg", alt="lapi")
+            p.chudova Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.
+            p.oleg Олег Набережний
+            p.clie клієнт
+            img(src="img/Mushik.svg", alt="chel")
         script(src="js/script.js")
