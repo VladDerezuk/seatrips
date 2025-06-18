@@ -19,7 +19,7 @@ header
 
 main
   background: url(../img/bgcser.jpg) no-repeat center/cover
-  padding: 200px
+  padding: 50px 260px
 
 .flex-between
   display: flex
@@ -41,7 +41,6 @@ h1
     font-size: 72px
 
 .vertix
-  max-width: 520px
   font-size: 16px
   line-height: 24px
   color: #fff
@@ -121,28 +120,52 @@ a.detalno
   padding-bottom: 20px
 
 .textes:before
+  display: none
   content: ""
   position: absolute
   top: -60px
-  left: 35%
-  width: 30%
+  left: 40%
+  width: 20%
   height: 60px
   opacity: 0.300
   border-left: 4px solid rgba(252, 252, 252, 252)
   border-top: 4px solid rgba(252, 252, 252, 252)
   border-right: 4px solid rgba(252, 252, 252, 252)
+  +media(1024)
+    content: ""
+    position: absolute
+    top: -60px
+    left: 40%
+    width: 20%
+    height: 60px
+    opacity: 0.300
+    border-left: 4px solid rgba(252, 252, 252, 252)
+    border-top: 4px solid rgba(252, 252, 252, 252)
+    border-right: 4px solid rgba(252, 252, 252, 252)
 
 .textes:after
+  display: none
   content: ""
   position: absolute
   top: 210px
-  left: 35%
-  width: 30%
+  left: 40%
+  width: 20%
   height: 120px
   opacity: 0.300
   border-left: 4px solid rgba(252, 252, 252, 252)
   border-right: 4px solid rgba(252, 252, 252, 252)
   border-bottom: 4px solid rgba(252, 252, 252, 252)
+  +media(1024)
+    content: ""
+    position: absolute
+    top: 210px
+    left: 40%
+    width: 20%
+    height: 120px
+    opacity: 0.300
+    border-left: 4px solid rgba(252, 252, 252, 252)
+    border-right: 4px solid rgba(252, 252, 252, 252)
+    border-bottom: 4px solid rgba(252, 252, 252, 252)
 
 .pro
   text-align: left
@@ -210,7 +233,6 @@ a.detalno
   text-align: center
 
 .plani
-  display: inline-block
   text-decoration: none
   font-size: 12px
   line-height: 110px
@@ -256,18 +278,17 @@ hr
   padding-bottom: 39px
 
 .detalnishe
-  padding: 10px 40px
+  padding: 10px 60px
   border-radius: 23px
   background-color: rgba(0,153,255,0)
   border: 2px solid #0099ff
 
 .knopkashka
   color: #fff
-  padding: 10px 40px
+  padding: 10px 60px
   border-radius: 23px
   filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
   background-color: #ffb700
-  gap: 5px
 
 .textik
   font-size: 13px
@@ -277,7 +298,7 @@ hr
   text-align: center
 
 .nizka
-  padding: 10px
+  padding: 26px
   background-color: #edf2f5
 
 img.imge
@@ -298,6 +319,8 @@ img.imge
   color: #ffffff
   font-weight: 400
   font-family: "PT Sans"
+  padding-top: 31px
+  padding-bottom: 49px
 
 span
   font-size: 56px
@@ -313,6 +336,7 @@ span
   color: #fff
   font-weight: 400
   font-style: italic
+  text-align: left
 
 .oleg
   font-size: 18px
@@ -321,9 +345,20 @@ span
   font-weight: 400
   text-align: center
 
+.drugi
+  position: relative
+
 .clie
   font-size: 14px
   line-height: 19px
   color: #999
   font-weight: 400
   text-align: center
+
+.lapi
+  position: absolute
+
+.olega
+  position: absolute
+  top: 100%
+  left: 40%
