@@ -14,8 +14,7 @@ body
 
 header
   background: url(../img/verxbgc.jpg) no-repeat center/cover
-  display: flex
-  flex-direction: column
+  background-position: bottom
 
 kartinka
   background: url(../img/bgcser.jpg) no-repeat center/cover
@@ -23,9 +22,11 @@ kartinka
   +media(1024)
     padding: 50px 200px
 
+
 footer
   background: url(../img/nizbgc.jpg) no-repeat center/cover
-  padding: 400px
+  padding: 200px
+  background-position: top
 
 .flex-between
   display: flex
@@ -121,17 +122,6 @@ a.detalno
   padding-bottom: 20px
 
 .textes:before
-  display: none
-  content: ""
-  position: absolute
-  top: -60px
-  left: 40%
-  width: 20%
-  height: 60px
-  opacity: 0.300
-  border-left: 4px solid rgba(252, 252, 252, 252)
-  border-top: 4px solid rgba(252, 252, 252, 252)
-  border-right: 4px solid rgba(252, 252, 252, 252)
   +media(1024)
     content: ""
     position: absolute
@@ -145,17 +135,6 @@ a.detalno
     border-right: 4px solid rgba(252, 252, 252, 252)
 
 .textes:after
-  display: none
-  content: ""
-  position: absolute
-  top: 210px
-  left: 40%
-  width: 20%
-  height: 120px
-  opacity: 0.300
-  border-left: 4px solid rgba(252, 252, 252, 252)
-  border-right: 4px solid rgba(252, 252, 252, 252)
-  border-bottom: 4px solid rgba(252, 252, 252, 252)
   +media(1024)
     content: ""
     position: absolute
@@ -365,6 +344,7 @@ span
   position: absolute
   top: 90%
   left: 42%
+  bottom: 0
 
 p
   margin: 0px
