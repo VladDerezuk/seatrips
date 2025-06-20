@@ -76,6 +76,9 @@ h1
   border-radius: 20px
   z-index: 1
 
+.detala
+  padding: 30px
+
 .strilka
   padding-bottom: 88px
 
@@ -272,6 +275,9 @@ hr
   background-color: rgba(0,153,255,0)
   border: 2px solid #0099ff
 
+.vede
+  padding-bottom: 20px
+
 .knopkashka
   color: #fff
   padding: 10px 60px
@@ -289,6 +295,9 @@ hr
 .nizka
   padding: 26px
   background-color: #edf2f5
+
+.vidsr
+  padding-bottom: 37px
 
 img.imge
   width: 100%
@@ -347,41 +356,40 @@ span
 
 .lapi
   position: absolute
-  top: -70px
-  left: 330px
-  transform:   50%
+  top: 0
+  left: 50%
+  transform: translate(-50% , -50%)
 
 .olega
   position: absolute
+  width: 90px
   left: 50%
   bottom: 0
-  transform: translateY(50%)
-  transform: translateX(50%)
+  transform: translate(-50% , 50%)
+  z-index: 1
 
 p
   margin: 0px
 
 .drugi:before
-  +media(1024)
     content: ""
     position: absolute
     top: 0%
     left: 0%
     width: 40%
-    height: 250px
+    height: 100%
     opacity: 0.102
     border-left: 4px solid rgba(252, 252, 252, 252)
     border-top: 4px solid rgba(252, 252, 252, 252)
     border-bottom: 4px solid rgba(252, 252, 252, 252)
 
 .drugi:after
-  +media(1024)
     content: ""
     position: absolute
     top: 0%
     right: 0%
     width: 40%
-    height: 250px
+    height: 100%
     opacity: 0.102
     border-right: 4px solid rgba(252, 252, 252, 252)
     border-top: 4px solid rgba(252, 252, 252, 252)
@@ -440,10 +448,8 @@ p
 
 .sunya
   width: 0
-  height: 0
-  border-top: 50px solid transparent
-  border-right: 50px solid #0099ff
-  border-bottom: 155px solid #0099ff
+  height: 100%
+  border: solid #0099ff
   position: absolute
   top: 0
   left: 0
@@ -468,8 +474,8 @@ p
   line-height: 44px
   color: #0099ff
   font-weight: 400
-  padding: 0 10px
-  padding-right: 60px
+  padding: 0 5px
+  padding-right: 50px
 
 .order
   text-decoration: none
@@ -511,6 +517,9 @@ p
 
 .card-bg-img
   width: 60px
+
+.vedstup
+  padding: 40px
 
 .knopkaniz
   opacity: 0.000
