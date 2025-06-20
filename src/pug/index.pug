@@ -1,109 +1,200 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        link(rel="stylesheet", href="css/style.css")
-        link(rel="icon", href="img/favi.png", type="image/png")  
-        title Морські Пригоди приїзжайте радуйтесь і все таке
-    body
-        include components/mixin
-        header
-            nav.navbar.navbar-dark.bg-dark.navbar-expand-lg.bg-body-tertiary.colr
-                .container.flex-between
-                    a.navbar-brand(href='#') 
-                        img(src="img/sea.png", alt="")
-                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
-                        span.navbar-toggler-icon
-                    #navbarNavAltMarkup.collapse.navbar-collapse
-                        .navbar-nav.ashk
-                            a.nav-link.cv(href='#') головна
-                            a.nav-link.cv(href='#') послуги
-                            a.nav-link.cv(href='#') про компанію
-                            a.nav-link.cv(href='#') акції
-                            a.nav-link.cv(href='#') партнери
-                            a.nav-link.cv(href='#') відгуки
-                            a.nav-link.cv(href='#') контакти
-            .textes.top-container
-                h1 Морські пригоди
-                p.col-lg-4.vertix Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
-                a.detalno.btn.btn-warning(href="") детальніше
-            .viberiplan.top-container
-                p.ober обери свій план подорожі
-                p.nash Наша фірма -лідер на ринку у своїй сфері
-                a.strilka(href="#tyr")
-                    img(src="img/strilka.png", alt="")
-    .div.pronash.container
-        .row
-            .col-9.col-md-3
-                .block
-                    p.pro про нашу компанію
-                    p.nasha Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
-                    a.detalno.btn.btn-warning(href="") детальніше
-                    p.tixo * - зверніть увагу, зміна ціни може залежати від курсу долара.
-            .col-12.col-md-8
-                .row
-                    .col-11.col-sm-8.col-lg-4
-                        .card.body-card
-                            img.card-img-top(src="img/bike.svg", alt="велик")
-                            .card-body
-                                h3.card-title.body-card-nazv Тур на велосипедах
-                                p.card-price 335 грн*
-                                p.card-text.body-card-texte Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.
-                    .col-11.col-sm-8.col-lg-4
-                        .card.body-card
-                            img.card-img-top(src="img/dashed.svg", alt="круг")
-                            .card-body
-                                h3.card-title.body-card-nazv Екскурсія на острів
-                                p.card-price 500 грн*
-                                p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року .
-                    .col-11.col-sm-8.col-lg-4
-                        .card.body-card
-                            img.card-img-top(src="img/people.svg", alt="мессаге")
-                            .card-body
-                                h3.card-title.body-card-nazv Особливе замовлення
-                                p.card-price 250 грн.*
-                                p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші. 
-                .row
-                    .col-12.text-center
-                        a.plani(href="") дивитись усі плани
-                            svg.circle(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512")
-                                path(d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z")
-        tyr#tyr
-        hr.container
-    .divovishni.container
-        .row
-            .col-12.col-lg-4
-                img.imge.img-fluid(src="img/fig.png", alt="Острів")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+    link(href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap", rel="stylesheet")
+    link(href="css/style.css", rel="stylesheet")
+    link(rel="icon", href="img/favi.png", type="image/png")
+    title Морські Пригоди приїзжайте радуйтесь і все таке
+  body
+    include components/mixin
 
-            .col-12.col-lg-8
-                h2.divoc Дивовижний безлюдний острів, який зводить людей з розуму
-                .row
-                    .col-12.col-md-8
-                        p.pxyke Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
-                        .d-flex.flex-wrap.gap-2
-                            a.knopkashka.btn.btn-warning(href="") Замовити тур
-                            a.detalnishe.btn.btn-outline-primary(href="") Детальніше
-                    .col-12.col-md-4
-                        .nizka
-                            p.card-price 575 грн./день
-                            p.textik В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
-    main.row
-        .col.container
-            h2.pimai cпіймай хвилю 
-            span живи яскраво!
-            p.polu.col-lg-8 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
-            a.detalno.btn.btn-warning(href="https://delikates.ua/images/product/pomidor.jpg") детальніше
-        .drugi.col
-            img.lapi(src="img/lapki.svg", alt="lapi")
-            p.chudova.col-lg-9 Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи.
-            p.oleg Олег Набережний
-            p.clie клієнт
-            img.olega(src="img/Mushik.svg", alt="chel")
-        script(src="js/script.js")
+    header
+      nav.navbar.navbar-dark.bg-dark.navbar-expand-lg.bg-body-tertiary.colr
+        .container.flex-between
+          a.navbar-brand(href="#")
+            img(src="img/sea.png", alt="")
+          button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav.ashk
+              a.nav-link.cv(href="#") головна
+              a.nav-link.cv(href="#") послуги
+              a.nav-link.cv(href="#") про компанію
+              a.nav-link.cv(href="#") акції
+              a.nav-link.cv(href="#") партнери
+              a.nav-link.cv(href="#") відгуки
+              a.nav-link.cv(href="#") контакти
+
+      .textes.top-container
+        h1 Морські пригоди
+        p.col-lg-4.vertix Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+        a.detalno.btn.btn-warning(href="") детальніше
+
+      .viberiplan.top-container
+        p.ober обери свій план подорожі
+        p.nash Наша фірма -лідер на ринку у своїй сфері
+        a.strilka(href="#tyr")
+          img(src="img/strilka.png", alt="")
+
+    main.div.pronash.container
+      .row
+        .col-12.col-md-3
+          .block
+            p.pro про нашу компанію
+            p.nasha Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+            a.detalno.btn.btn-warning(href="") детальніше
+            p.tixo * - зверніть увагу, зміна ціни може залежати від курсу долара.
+        .col-12.col-md-8
+          .row
+            .col-12.col-md-6.col-lg-4
+              .card.body-card
+                img.card-img-top(src="img/bike.svg", alt="велик")
+                .card-body
+                  h3.card-title.body-card-nazv Тур на велосипедах
+                  p.card-price 335 грн*
+                  p.card-text.body-card-texte Подорожуючи на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.
+            .col-12.col-md-6.col-lg-4
+              .card.body-card
+                .flag
+                img.card-img-top(src="img/dashed.svg", alt="круг")
+                .card-body
+                  h3.card-title.body-card-nazv Екскурсія на острів
+                  p.card-price 500 грн*
+                  p.card-text.body-card-texte Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса у будь-яку пору року.
+            .col-12.col-md-6.col-lg-4
+              .card.body-card
+                .flag 
+                img.card-img-top(src="img/people.svg", alt="мессаге")
+                .card-body
+                  h3.card-title.body-card-nazv Особливе замовлення
+                  p.card-price 250 грн.*
+                  p.card-text.body-card-texte Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.
+          .row
+            .col-12.text-center
+              a.plani(href="") дивитись усі плани
+                svg.circle(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 512 512")
+                  path(d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z")
+    tyr#tyr
+    hr.container
+    .divovishni.container
+      .row
+        .col-12.col-lg-4
+          img.imge.img-fluid(src="img/fig.png", alt="Острів")
+        .col-12.col-lg-8
+          h2.divoc Дивовижний безлюдний острів, який зводить людей з розуму
+          .row
+            .col-12.col-md-8
+              p.pxyke Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+              .d-flex.flex-wrap.gap-2
+                a.knopkashka.btn.btn-warning(href="") Замовити тур
+                a.detalnishe.btn.btn-outline-primary(href="") Детальніше
+            .col-12.col-md-4
+              .nizka
+                p.card-price 575 грн./день
+                p.textik В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+
+kartinka.d-flex.align-items-center
+  .container
+    .row.align-items-center
+      .col-lg-6.col-md-12
+        h2.pimai СПІЙМАЙ ХВИЛЮ
+        span ЖИВИ ЯСКРАВО!
+        p.polu.col-lg-8 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитись? Наші досвідчені інструктори навчать тебе вміло «піймати хвилю» та відчути себе справжнім сёрфером!
+        a.detalno.btn.btn-warning(href="https://delikates.ua/images/product/pomidor.jpg") ДЕТАЛЬНІШЕ
+      .col-lg-6.col-md-12.mt-4.mt-lg-0
+        .drugi
+          img.lapi(src="img/lapki.svg", alt="lapi")
+          p.chudova Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють справжні професіонали своєї справи.
+          p.oleg Олег Набережний
+          p.clie клієнт
+          img.olega(src="img/Mushik.svg", alt="chel")
+
+
+
+
+.special.container
+    h2.special Спеціальні пропозиції тижня 
+    p.hott Гарячі праозиції, по-швидше обирай і поїхали!
+
+.kartochkki.container
+  .row.g-4.justify-content-center
+    .col-12.col-sm-6.col-lg-3.kartka
+      .tour-card
+        .flag
+        img.img-fluid(src="img/footkar1.jpg", alt="")
+        .tour-body
+          h2.title Романтична подорож на 2
+          p.desc.col-lg-11 Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.
+          .bottom-row.d-flex.align-items-center
+            p.price 2599 грн.
+            a.order(href="#") замовити
+
+    .col-12.col-sm-6.col-lg-3.kartka
+      .tour-card
+        .flag
+        img.img-fluid(src="img/velik.jpg", alt="")
+        .tour-body
+          h2.title Велотур
+          p.desc.col-lg-11 Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!
+          .bottom-row.d-flex.align-items-center
+            p.price 555 грн.
+            a.order(href="#") замовити
+
+    .col-12.col-sm-6.col-lg-3.kartka
+      .tour-card
+        .flag
+        img.img-fluid(src="img/palm.jpg", alt="")
+        .tour-body
+          h2.title На острови!
+          p.desc.col-lg-11 Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!
+          .bottom-row.d-flex.align-items-center
+            p.price 1559 грн.
+            a.order(href="#") замовити
+
+    .col-12.col-sm-6.col-lg-3.kartka
+      .tour-card
+        .flag
+        img.img-fluid(src="img/skydw.jpg", alt="")
+        .tour-body
+          h2.title Катання на сьорфінгу
+          p.desc.col-lg-11 Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!
+          .bottom-row.d-flex.align-items-center
+            p.price 999 грн.
+            a.order(href="#") замовити
+    hr
+.dodatkova.container
+  .row
+    .col-12
+      h2.dodatk Додаткова інформація
+  .row.align-items-start
+    .col-12.col-md-6.col-lg-4
+      .info-card.p-4.position-relative
+        img.card-bg-img.mb-3(src="img/file.svg", alt="Готелі")
+        h2.infp Графік роботи готелів.xls
+        p.small.text-light.malee Розмір файла: 10Mb
+        p.text-light Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
+        a.btn.btn-warning.knopkaniz(href="#")  Скачати
+    .col-12.col-md-6.col-lg-4
+      .info-carde.p-4.position-relative
+        img.card-bg-img.mb-3(src="img/file.svg", alt="Харчування")
+        h2.infp Інформація про харчування.xls
+        p.small.text-light.malee Розмір файла: 10Mb
+        p.text-light У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додатково, то ознайомтесь з умовами.
+        a.btn.btn-warning.knopkaniz(href="#")  Скачати
+    .col-12.col-lg-4
+      .consult-card.text-center
+        h5.text-muted задати питання
+        p.small.col-lg-7 Скажіть доброго для нашого консультанту, і ми з радістю відповімо на Ваші запитання
+        a.d-block.telik(href="tel:+380505698511") +38 (050) 56 98 511
+        h2.tyotya Анна Миколаївна
+        p.text-muted консультант
+        img(src="img/tyotya.svg", alt="").rounded-circle
+footer
+.yraa
+    .container 
+        h2.fullik © 2016 Cars.com All rights reserved.
+    script(src="js/script.js")

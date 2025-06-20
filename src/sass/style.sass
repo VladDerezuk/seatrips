@@ -17,9 +17,15 @@ header
   display: flex
   flex-direction: column
 
-main
+kartinka
   background: url(../img/bgcser.jpg) no-repeat center/cover
-  padding: 50px 260px
+  padding: 10px 0px
+  +media(1024)
+    padding: 50px 200px
+
+footer
+  background: url(../img/nizbgc.jpg) no-repeat center/cover
+  padding: 400px
 
 .flex-between
   display: flex
@@ -46,11 +52,6 @@ h1
   color: #fff
   font-weight: 400
   font-style: italic
-  text-align: center
-
-
-.items-center
-  align-items: center
   text-align: center
 
 .colr
@@ -179,7 +180,6 @@ a.detalno
 
 .nasha
   text-align: left
-  max-width: 250px
   font-size: 16px
   line-height: 22px
   color: #555
@@ -196,11 +196,12 @@ a.detalno
   font-weight: 400
 
 .body-card
+  position: relative
   border-radius: 0px
   border: none
   background-color: #f4f7f9
   text-align: center
-  transition: transform 3s ease
+  transition: all 0.5s ease
   &:hover
     background-color: #fff
     transform: translateY(-5px)
@@ -331,12 +332,12 @@ span
   font-weight: 400
 
 .chudova
+  padding: 5px
   font-size: 16px
   line-height: 25px
   color: #fff
   font-weight: 400
   font-style: italic
-  text-align: left
 
 .oleg
   font-size: 18px
@@ -357,8 +358,206 @@ span
 
 .lapi
   position: absolute
+  top: -70px
+  left: 330px
 
 .olega
   position: absolute
-  top: 100%
-  left: 40%
+  top: 90%
+  left: 42%
+
+p
+  margin: 0px
+
+.drugi:before
+  +media(1024)
+    content: ""
+    position: absolute
+    top: -40%
+    left: -5%
+    width: 40%
+    height: 250px
+    opacity: 0.102
+    border-left: 4px solid rgba(252, 252, 252, 252)
+    border-top: 4px solid rgba(252, 252, 252, 252)
+    border-bottom: 4px solid rgba(252, 252, 252, 252)
+
+.drugi:after
+  +media(1024)
+    content: ""
+    position: absolute
+    top: -40%
+    left: 65%
+    width: 40%
+    height: 250px
+    opacity: 0.102
+    border-right: 4px solid rgba(252, 252, 252, 252)
+    border-top: 4px solid rgba(252, 252, 252, 252)
+    border-bottom: 4px solid rgba(252, 252, 252, 252)
+
+.special
+  padding-top: 60px
+  padding-bottom: 12px
+  font-size: 36px
+  line-height: 42px
+  text-transform: uppercase
+  color: #333
+  font-weight: 400
+  text-align: center
+
+.hott
+  font-size: 16px 
+  line-height: 24px
+  color: #333
+  font-weight: 400
+  font-style: italic
+  text-align: center
+  padding-bottom: 36px
+
+.tour-card
+  background-color: #f4f7f9
+  overflow: hidden
+  text-align: left
+  position: relative
+  transition: all 0.5s ease
+  &:hover
+    transform: translatey(5%)
+    background-color: #fff
+
+.tour-card img
+  width: 100%
+
+.tour-body
+  padding: 15px
+
+.flag
+  width: 0
+  height: 0
+  border-left: 50px solid #25cb14
+  border-bottom: 50px solid transparent
+  position: absolute
+  top: 0
+  left: 0
+
+.title
+  font-size: 18px
+  line-height: 26px
+  color: #333
+  font-weight: 400
+  padding: 0 10px
+
+.desc
+  font-size: 13px
+  line-height: 19px
+  color: #999
+  font-weight: 400
+  padding: 0 10px
+
+
+.price
+  font-size: 24px
+  line-height: 44px
+  color: #0099ff
+  font-weight: 400
+  padding: 0 10px
+  padding-right: 60px
+
+.order
+  text-decoration: none
+  font-size: 13px
+  letter-spacing: 1px
+  text-transform: uppercase
+  color: #ffb700
+  font-weight: 400
+  text-align: center
+
+.kartka
+  padding: 20px
+
+.dodatkova
+  padding-bottom: 60px
+
+.dodatk
+  font-size: 36px
+  letter-spacing: 1px
+  line-height: 40px
+  text-transform: uppercase
+  color: #333
+  font-weight: 400
+
+.info-card
+  border-radius: 0px
+  background: url(../img/domik.jpg) no-repeat center/cover
+  color: #fff
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4)
+  display: flex
+  flex-direction: column
+
+.info-carde
+  color: #fff
+  background: url(../img/bash.jpg) no-repeat center/cover
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4)
+  display: flex
+  flex-direction: column
+
+.card-bg-img
+  width: 60px
+
+.knopkaniz
+  opacity: 0.000
+  padding: 10px
+  border-radius: 16px
+  background-color: rgba(255,183,0,0)
+  border: 2px solid #ffb700
+
+.infp
+  font-size: 18px
+  line-height: 24px
+  color: #fff
+  font-weight: 400
+
+.text-light
+  font-size: 13px
+  line-height: 19px
+  color: #bbb
+  font-weight: 400
+
+.text-muted
+  font-size: 18px
+  letter-spacing: 1px
+  line-height: 26px
+  color: #333
+  font-weight: 400
+  text-align: center
+
+.yraa
+  padding: 20px 200px
+  background-color: #1a1a1a
+
+.fullik 
+  font-size: 13px
+  line-height: 19px
+  color: #ffffff
+  font-weight: 400
+  text-align: center
+
+.telik
+  font-size: 18px
+  line-height: 26px
+  color: #0099ff
+  font-weight: 400
+  text-align: center
+
+.tyotya
+  font-size: 18px
+  line-height: 26px
+  color: #333
+  font-weight: 400
+  text-align: center
+  
+.text-muted
+  font-size: 13px
+  line-height: 19px
+  color: #999
+  font-weight: 400
+  text-align: center
