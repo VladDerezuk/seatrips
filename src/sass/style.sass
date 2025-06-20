@@ -97,6 +97,14 @@ a.detalno
 .navbar-collapse
   justify-content: flex-end
 
+.corner-star 
+  position: absolute
+  top: 6px
+  left: 6px
+  font-size: 12px
+  color: white
+  z-index: 1
+
 .navbar-nav
   display: flex
   gap: 16px
@@ -225,15 +233,13 @@ a.detalno
   text-align: center
   transition: all 1s ease
   &:hover
-    color: #ffb700
+    transform: translateX(5px)
   
 .circle
   width: 10px
-  height: 10px
+  height: 50px
   fill: #0099ff
   align-items: center
-  &:hover
-    fill: #ffb700
 
 hr
   border: none
@@ -330,6 +336,7 @@ span
 
 .drugi
   position: relative
+  padding: 30px
 
 .clie
   font-size: 14px
@@ -342,12 +349,14 @@ span
   position: absolute
   top: -70px
   left: 330px
+  transform:   50%
 
 .olega
   position: absolute
-  top: 90%
-  left: 42%
+  left: 50%
   bottom: 0
+  transform: translateY(50%)
+  transform: translateX(50%)
 
 p
   margin: 0px
@@ -356,8 +365,8 @@ p
   +media(1024)
     content: ""
     position: absolute
-    top: -40%
-    left: -5%
+    top: 0%
+    left: 0%
     width: 40%
     height: 250px
     opacity: 0.102
@@ -369,8 +378,8 @@ p
   +media(1024)
     content: ""
     position: absolute
-    top: -40%
-    left: 65%
+    top: 0%
+    right: 0%
     width: 40%
     height: 250px
     opacity: 0.102
@@ -404,7 +413,7 @@ p
   position: relative
   transition: all 0.5s ease
   &:hover
-    transform: translatey(5%)
+    transform: translatey(2%)
     background-color: #fff
 
 .tour-card img
@@ -418,6 +427,23 @@ p
   height: 0
   border-left: 50px solid #25cb14
   border-bottom: 50px solid transparent
+  position: absolute
+  top: 0
+  left: 0
+
+.fa-person-bikin
+  padding: 10px
+  position: absolute
+  top: -6px
+  left: 6px
+  z-index: 3
+
+.sunya
+  width: 0
+  height: 0
+  border-top: 50px solid transparent
+  border-right: 50px solid #0099ff
+  border-bottom: 155px solid #0099ff
   position: absolute
   top: 0
   left: 0
