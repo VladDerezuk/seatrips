@@ -18,7 +18,7 @@ header
 
 kartinka
   background: url(../img/bgcser.jpg) no-repeat center/cover
-  padding: 40px 0px
+  padding: 60px 0px
   +media(1024)
     padding: 50px 200px
 
@@ -48,6 +48,7 @@ h1
     font-size: 72px
 
 .vertix
+  padding-bottom: 10px
   font-size: 16px
   line-height: 24px
   color: #fff
@@ -71,10 +72,28 @@ h1
   +media(1920)
     padding-bottom: 360px
 
+.detalnos
+  padding: 10px 35px
+  border-radius: 20px
+  z-index: 1
+
+a.detalnos
+  text-decoration: none
+  font-size: 16px
+  letter-spacing: 1px
+  text-transform: uppercase
+  color: #fdfcfb
+  font-weight: 400
+  text-align: center
+  transition: all 1s ease
+
 .detalno
   padding: 10px 35px
   border-radius: 20px
   z-index: 1
+  width: 100%
+  +media(1024)
+    width: auto
 
 .detala
   padding: 30px
@@ -101,10 +120,10 @@ a.detalno
   justify-content: flex-end
 
 .star
-  width: 15px
+  width: 18px
   position: absolute
-  top: 6px
-  left: 6px
+  top: 11px
+  left: 10px
   fill: #fff
   z-index: 4
 
@@ -278,20 +297,26 @@ hr
   padding-bottom: 39px
 
 .detalnishe
+  width: 100%
   padding: 10px 67px
   border-radius: 23px
   background-color: rgba(0,153,255,0)
   border: 2px solid #0099ff
+  +media(1024)
+    width: auto
 
 .vede
   padding-bottom: 20px
 
 .knopkashka
   color: #fff
+  width: 100%
   padding: 10px 60px
   border-radius: 23px
   filter: drop-shadow(0px 4px 10.5px rgba(193,139,1,0.24))
   background-color: #ffb700
+  +media(1024)
+    width: auto
 
 .kart
   position: relative
@@ -340,6 +365,7 @@ span
   font-weight: 400
 
 .chudova
+  text-align: center
   padding: 5px
   font-size: 16px
   line-height: 25px
@@ -448,14 +474,14 @@ p
 .flag
   width: 0
   height: 0
-  border-left: 50px solid #25cb14
-  border-bottom: 50px solid transparent
+  border-left: 60px solid #25cb14
+  border-bottom: 60px solid transparent
   position: absolute
   top: 0
   left: 0
   z-index: 3
 
-.tCar
+.bibi
   position: relative
   overflow: hidden
 
@@ -483,7 +509,7 @@ p
   line-height: 19px
   color: #999
   font-weight: 400
-  padding: 0 10px
+  padding: 0 5px
 
 
 .price
@@ -492,6 +518,15 @@ p
   color: #0099ff
   font-weight: 400
   padding: 0 1px
+  padding-left: 4px
+
+.pika
+  font-size: 24px
+  line-height: 44px
+  color: #0099ff
+  font-weight: 400
+  padding: 0 1px
+  padding-left: 1px
 
 .order
   position: relative
@@ -511,6 +546,7 @@ p
   padding-bottom: 60px
 
 .dodatk
+  text-align: center
   font-size: 36px
   letter-spacing: 1px
   line-height: 40px
@@ -533,7 +569,7 @@ p
   text-shadow: 0 1px 3px rgba(0,0,0,0.4)
   display: flex
   flex-direction: column
-  padding: 34px 30px 30px 20px
+  padding: 43px 30px 30px 20px
 
 .info-carde
   color: #fff
@@ -541,14 +577,14 @@ p
   text-shadow: 0 1px 3px rgba(0,0,0,0.4)
   display: flex
   flex-direction: column
-  padding: 25px 30px 30px 20px
+  padding: 33px 30px 30px 20px
 
 .card-bg-img
   width: 60px
 
 .vedstup
   position: relative
-  padding: 54px
+  padding: 61px
 
 .knopkaniz
   color: #ffb700
@@ -682,7 +718,6 @@ p
   color: #999
   font-weight: 400
   text-align: center
-  padding-bottom: 20px
 
 .telikii
   position: absolute
@@ -709,3 +744,7 @@ p
 
 .veda
   padding-bottom: 30px  
+
+.yraa
+  background-color: #1a1a1a
+  padding: 30px 0px
