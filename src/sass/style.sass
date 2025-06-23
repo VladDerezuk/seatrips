@@ -17,7 +17,7 @@ header
   background-position: bottom
   width: 100%
 
-section
+.fotka
   background: url(../img/bgcser.jpg) no-repeat center/cover
   padding: 60px 0px
 
@@ -517,9 +517,22 @@ p
   padding: 0 4px
 
 .bigw
+  +media(320)
+    font-size: 16px
+  +media(576)
+    font-size: 14px
+  +media(992)
+    font-size: 12px
   +media(1200)
     font-size: 16px
 
+.bksa
+  +media(320)
+    font-size: 16px
+  +media(576)
+    font-size: 14px
+  +media(1200)
+    font-size: 16px
 .desc
   font-size: 13px
   line-height: 19px
@@ -560,7 +573,7 @@ p
   transition: all 1s ease
   position: relative
   text-decoration: none
-  font-size: 13px
+  font-size: 11px
   letter-spacing: 1px
   text-transform: uppercase
   color: #ffb700
@@ -642,7 +655,7 @@ p
   fill: #ffb700
   width: 10px
   max-height: 10px
-  top: 4px
+  top: 2px
   right: -5px
 
 .infp
